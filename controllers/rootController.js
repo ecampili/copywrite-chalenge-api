@@ -1,6 +1,6 @@
-// const welcome = (req, res) => {
-//   res.status(200).json({ msg: 'Welcome to api' });
-// };
+const welcome = (req, res) => {
+  res.status(200).json({ msg: 'Welcome to api' });
+};
 
 const processText = (req, res) => {
   const { text } = req.query;
@@ -26,6 +26,6 @@ const processText = (req, res) => {
 };
 
 module.exports = {
-  // welcome,
+  welcome,
   processText,
 };
